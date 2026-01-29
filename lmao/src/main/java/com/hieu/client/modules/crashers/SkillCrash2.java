@@ -1,6 +1,6 @@
-package com.x310.clarity.modules.crashers;
+package com.hieu.client.modules.crashers;
 
-import com.x310.clarity.Main;
+import com.hieu.client.Main;
 import meteordevelopment.meteorclient.events.game.GameLeftEvent;
 import meteordevelopment.meteorclient.events.world.TickEvent;
 import meteordevelopment.meteorclient.mixin.ClientPlayNetworkHandlerAccessor;

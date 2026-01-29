@@ -1,4 +1,4 @@
-package com.x310.clarity.commands;
+package com.hieu.client.commands;
 
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 import com.mojang.brigadier.arguments.IntegerArgumentType;

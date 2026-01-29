@@ -1,7 +1,7 @@
-package com.x310.clarity.mixin;
+package com.hieu.client.mixin;
 
-import com.x310.clarity.Main;
-import com.x310.clarity.modules.ClarityNametags;
+import com.hieu.client.Main;
+import com.hieu.client.modules.ClarityNametags;
 import meteordevelopment.meteorclient.systems.modules.Modules;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.RunArgs;

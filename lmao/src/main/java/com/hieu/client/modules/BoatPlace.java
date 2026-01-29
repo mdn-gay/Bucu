@@ -1,6 +1,6 @@
-package com.x310.clarity.modules;
+package com.hieu.client.modules;
 
-import com.x310.clarity.Main;
+import com.hieu.client.Main;
 import meteordevelopment.meteorclient.events.packets.PacketEvent;
 import meteordevelopment.meteorclient.systems.modules.Module;
 import meteordevelopment.meteorclient.utils.player.ChatUtils;

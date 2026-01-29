@@ -1,6 +1,6 @@
-package com.x310.clarity.modules;
+package com.hieu.client.modules;
 
-import com.x310.clarity.Main;
+import com.hieu.client.Main;
 import meteordevelopment.meteorclient.events.render.Render2DEvent;
 import meteordevelopment.meteorclient.events.world.TickEvent;
 import meteordevelopment.meteorclient.renderer.text.TextRenderer;
@@ -66,7 +66,7 @@ public class ClarityNametags extends Module {
 
 
     public ClarityNametags() {
-        super(Main.CATEGORY, "Claritytags", "clarity nametag fr");
+        super(Main.CATEGORY, "Claritytags", "PrimeClient nametag fr");
         this.pos = new Vector3d();
     }
 

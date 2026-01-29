@@ -1,14 +1,14 @@
-package com.x310.clarity;
+package com.hieu.client;
 
-import com.x310.clarity.commands.*;
-import com.x310.clarity.hud.Arraylist;
-import com.x310.clarity.hud.ClarityChan;
-import com.x310.clarity.hud.Logo;
-import com.x310.clarity.hud.Watermark;
+import com.hieu.client.commands.*;
+import com.hieu.client.hud.Arraylist;
+import com.hieu.client.hud.ClarityChan;
+import com.hieu.client.hud.Logo;
+import com.hieu.client.hud.Watermark;
 import com.mojang.logging.LogUtils;
-import com.x310.clarity.modules.*;
-import com.x310.clarity.modules.crashers.*;
-import com.x310.clarity.utils.payload.PaperCustomPayload;
+import com.hieu.client.modules.*;
+import com.hieu.client.modules.crashers.*;
+import com.hieu.client.utils.payload.PaperCustomPayload;
 import meteordevelopment.meteorclient.addons.GithubRepo;
 import meteordevelopment.meteorclient.addons.MeteorAddon;
 import meteordevelopment.meteorclient.commands.Commands;
@@ -24,14 +24,14 @@ import java.util.ArrayList;
 
 public class Main extends MeteorAddon {
     public static final Logger LOG = LogUtils.getLogger();
-    public static final Category CATEGORY = new Category("Clarity Addon");
-    public static final Category CRASH_GROUP = new Category("Clarity Crash");
-    public static final HudGroup HUD_GROUP = new HudGroup("Clarity");
+    public static final Category CATEGORY = new Category("PrimeClient Addon");
+    public static final Category CRASH_GROUP = new Category("PrimeClient Crash");
+    public static final HudGroup HUD_GROUP = new HudGroup("PrimeClient");
     public static final ArrayList<String> delayedMessages = new ArrayList<>();
 
     @Override
     public void onInitialize() {
-        LOG.info("Initializing Clarity");
+        LOG.info("Initializing PrimeClient");
 
         // Modules
         Modules.get().add(new ClarityNametags());
@@ -78,11 +78,11 @@ public class Main extends MeteorAddon {
 
     @Override
     public String getPackage() {
-        return "com.x310.clarity";
+        return "com.hieu.client";
     }
 
     @Override
     public GithubRepo getRepo() {
-        return new GithubRepo("ck-clarity", "addon");
+        return new GithubRepo("ck-PrimeClient", "addon");
     }
 }

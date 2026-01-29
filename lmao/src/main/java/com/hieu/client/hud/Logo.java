@@ -1,6 +1,6 @@
-package com.x310.clarity.hud;
+package com.hieu.client.hud;
 
-import com.x310.clarity.Main;
+import com.hieu.client.Main;
 import meteordevelopment.meteorclient.settings.IntSetting;
 import meteordevelopment.meteorclient.settings.Setting;
 import meteordevelopment.meteorclient.settings.SettingGroup;
@@ -11,7 +11,7 @@ import meteordevelopment.meteorclient.utils.render.color.Color;
 import net.minecraft.util.Identifier;
 
 public class Logo extends HudElement {
-    private final Identifier TEXTURE = Identifier.of("clarity", "textures/icon.png");
+    private final Identifier TEXTURE = Identifier.of("PrimeClient", "textures/icon.png");
     private final SettingGroup sgGeneral = settings.getDefaultGroup();
 
     private final Setting<Integer> size = sgGeneral.add(new IntSetting.Builder()
@@ -25,7 +25,7 @@ public class Logo extends HudElement {
     );
 
     public static final HudElementInfo<Logo> INFO = new HudElementInfo<>(
-        Main.HUD_GROUP, "Logo", "Renders the Clarity logo", Logo::new);
+        Main.HUD_GROUP, "Logo", "Renders the PrimeClient logo", Logo::new);
 
     public Logo() {
         super(INFO);
@@ -36,6 +36,6 @@ public class Logo extends HudElement {
     public void render(HudRenderer renderer) {
         setSize(renderer.textWidth("Test"), 60);
         renderer.texture(TEXTURE, x, y, size.get(), size.get(), Color.WHITE);
-        renderer.text("clarity.gay", x + ((double) size.get() / 2) - (renderer.textWidth("clarity.gay") / 2), y + size.get(), Color.WHITE, true);
+        renderer.text("PrimeClient.gay", x + ((double) size.get() / 2) - (renderer.textWidth("PrimeClient.gay") / 2), y + size.get(), Color.WHITE, true);
     }
 }

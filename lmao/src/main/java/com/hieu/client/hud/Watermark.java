@@ -1,6 +1,6 @@
-package com.x310.clarity.hud;
+package com.hieu.client.hud;
 
-import com.x310.clarity.Main;
+import com.hieu.client.Main;
 import meteordevelopment.meteorclient.settings.ColorSetting;
 import meteordevelopment.meteorclient.settings.Setting;
 import meteordevelopment.meteorclient.settings.SettingGroup;
@@ -47,7 +47,7 @@ public class Watermark extends HudElement {
         int tps = (int) TickRate.INSTANCE.getTickRate();
         int ping = ping();
 
-        String text = String.format("clarity.gay | 0.3.5 / %d FPS / %d TPS / %d ms", fps, tps, ping);
+        String text = String.format("PrimeClient.gay | 0.3.5 / %d FPS / %d TPS / %d ms", fps, tps, ping);
         int textWidth = (int) renderer.textWidth(text, true);
         int textHeight = (int) renderer.textHeight(true);
 
@@ -66,7 +66,7 @@ public class Watermark extends HudElement {
         renderer.quad(x, y, outerWidth, outerHeight, new Color(0, 0, 0, 255));
         renderer.quad(x, y - underlineHeight, outerWidth, underlineHeight, lcolor);
         renderer.text(text, x + paddingX, y + paddingY, tcolor, true);
-        renderer.text("clarity.gay", x + paddingX, y + paddingY, tcolor, true);
+        renderer.text("PrimeClient.gay", x + paddingX, y + paddingY, tcolor, true);
     }
 
 }

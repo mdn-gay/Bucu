@@ -1,6 +1,6 @@
-package com.x310.clarity.mixin;
+package com.hieu.client.mixin;
 
-import com.x310.clarity.netty.ClientPayloadPacketDecoder;
+import com.hieu.client.netty.ClientPayloadPacketDecoder;
 import io.netty.channel.ChannelPipeline;
 import io.netty.channel.socket.SocketChannel;
 import net.minecraft.network.ClientConnection;
@@ -17,7 +17,7 @@ public class ClientConnectionMixin {
     @Inject(method = "addHandlers", at = @At("RETURN"))
     private static void onAddHandlers(ChannelPipeline pipeline, NetworkSide side, boolean local, PacketSizeLogger packetSizeLogger, CallbackInfo ci) {
         if (pipeline.channel() instanceof SocketChannel) {
-            pipeline.addBefore(HandlerNames.INBOUND_CONFIG , "clarity-decoder", new ClientPayloadPacketDecoder());
+            pipeline.addBefore(HandlerNames.INBOUND_CONFIG , "PrimeClient-decoder", new ClientPayloadPacketDecoder());
         }
     }
 }

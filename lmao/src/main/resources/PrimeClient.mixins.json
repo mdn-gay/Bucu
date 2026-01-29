@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "com.x310.clarity.mixin",
+  "package": "com.hieu.client.mixin",
   "compatibilityLevel": "JAVA_21",
   "client": [
     "ClientPlayerEntityMixin",

@@ -1,9 +1,9 @@
-package com.x310.clarity.mixin;
+package com.hieu.client.mixin;
 
 import com.mojang.authlib.properties.Property;
 import com.mojang.authlib.properties.PropertyMap;
-import com.x310.clarity.modules.BungeeGuard;
-import com.x310.clarity.modules.ChannelFetch;
+import com.hieu.client.modules.BungeeGuard;
+import com.hieu.client.modules.ChannelFetch;
 import meteordevelopment.meteorclient.systems.modules.Modules;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.network.ClientLoginNetworkHandler;

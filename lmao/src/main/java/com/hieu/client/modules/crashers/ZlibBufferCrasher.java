@@ -1,6 +1,6 @@
-package com.x310.clarity.modules.crashers;
+package com.hieu.client.modules.crashers;
 
-import com.x310.clarity.Main;
+import com.hieu.client.Main;
 import meteordevelopment.meteorclient.settings.*;
 import meteordevelopment.meteorclient.systems.modules.Module;
 import meteordevelopment.meteorclient.events.world.TickEvent;

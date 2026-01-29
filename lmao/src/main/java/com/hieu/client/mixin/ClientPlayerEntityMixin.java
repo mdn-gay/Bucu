@@ -1,6 +1,6 @@
-package com.x310.clarity.mixin;
+package com.hieu.client.mixin;
 
-import com.x310.clarity.Main;
+import com.hieu.client.Main;
 import meteordevelopment.meteorclient.utils.player.ChatUtils;
 import net.minecraft.client.network.ClientPlayerEntity;
 import org.spongepowered.asm.mixin.Mixin;

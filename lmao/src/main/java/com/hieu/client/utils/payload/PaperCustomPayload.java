@@ -1,4 +1,4 @@
-package com.x310.clarity.utils.payload;
+package com.hieu.client.utils.payload;
 
 import net.minecraft.network.PacketByteBuf;
 import net.minecraft.network.codec.PacketCodec;

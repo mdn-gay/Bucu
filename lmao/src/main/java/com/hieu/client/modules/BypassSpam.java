@@ -1,6 +1,6 @@
-package com.x310.clarity.modules;
+package com.hieu.client.modules;
 
-import com.x310.clarity.Main;
+import com.hieu.client.Main;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
