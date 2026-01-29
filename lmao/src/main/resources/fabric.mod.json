@@ -10,7 +10,7 @@
   "contact": {
     "repo": "https://github.com/Renovsk"
   },
-  "icon": "assets/PrimeClient/textures/icon.png",
+  "icon": "icon.png",
   "environment": "client",
   "entrypoints": {
     "meteor": [
