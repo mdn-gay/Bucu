@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "clarity",
+  "version": "${version}",
+  "name": "PrimeCrasher",
+  "description": "PrimeCrasher addon for Meteor Client.",
+  "authors": [
+    "x310"
+  ],
+  "contact": {
+    "repo": "https://github.com/Renovsk"
+  },
+  "icon": "assets/clarity/textures/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "com.x310.clarity.Main"
+    ]
+  },
+  "mixins": [
+    "clarity.mixins.json"
+  ],
+  "custom": {
+    "meteor-client:color": "177,205,255"
+  },
+  "depends": {
+    "java": ">=21",
+    "minecraft": ["${mc_version}"],
+    "meteor-client": "*"
+  }
+}
